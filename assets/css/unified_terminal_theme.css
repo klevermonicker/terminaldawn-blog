@@ -45,49 +45,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.5rem;
 }
 
-/* Chrome effect for site title - targeting the logo div */
-.logo,
-.logo *,
-.logo a,
-.logo span {
-  background: linear-gradient(
-    90deg,
-    #eee 0%,
-    #999 22%,
-    #ddd 45%,
-    #eee 50%,
-    #ddd 55%,
-    #999 78%,
-    #eee 100%
-  ) !important;
-  background-size: 200% 100% !important;
-  background-clip: text !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
-  text-shadow: none !important;
-  border: none !important;
-  font-weight: bold !important;
-  animation: chromeShine 3s ease-in-out infinite !important;
-  text-decoration: none !important;
-}
-
-/* Hide terminal prompt/cursor symbols */
-.logo::before,
-.logo::after,
-.logo *::before,
-.logo *::after {
-  display: none !important;
-  content: none !important;
-}
-
-/* Chrome shine animation */
-@keyframes chromeShine {
-  0% { background-position: -200% 0; }
-  50% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
-}
-
 /* Links with neon glow */
 a {
   color: var(--text);
@@ -146,21 +103,6 @@ pre::before {
   background: var(--accent-alpha-20);
   color: var(--accent);
   box-shadow: 0 0 15px var(--accent-alpha-70);
-}
-
-/* Hide menu markers/bullets */
-.menu li::marker,
-.menu--mobile li::marker,
-ul.menu li::marker {
-  content: none !important;
-  display: none !important;
-}
-
-.menu li,
-.menu--mobile li,
-ul.menu li {
-  list-style: none !important;
-  list-style-type: none !important;
 }
 
 /* Post metadata */
@@ -230,48 +172,6 @@ p code, li code {
   box-shadow: 0 8px 32px rgba(255, 0, 255, 0.1);
 }
 
-/* Cyberpunk-style lists */
-ul li::marker {
-  content: "▶ ";
-  color: var(--accent);
-}
-
-ol li::marker {
-  color: var(--text-secondary);
-}
-
-/* Add scanning line animation - subtle and sporadic */
-@keyframes scan {
-  0% { transform: translateX(-100%); opacity: 0; }
-  5% { opacity: 0.2; }
-  10% { opacity: 0.4; }
-  15% { opacity: 0.2; }
-  20% { opacity: 0; transform: translateX(100vw); }
-  100% { transform: translateX(100vw); opacity: 0; }
-}
-
-@keyframes scanSequence {
-  0% { animation-play-state: running; }
-  12% { animation-play-state: paused; }
-  100% { animation-play-state: paused; }
-}
-
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, var(--accent), transparent);
-  animation: 
-    scan 5s linear infinite,
-    scanSequence 25s ease-in-out infinite;
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 0;
-}
-
 /* Terminal cursor blink */
 @keyframes blink {
   0%, 50% { opacity: 1; }
@@ -303,3 +203,124 @@ button:hover, .button:hover {
   box-shadow: 0 0 20px var(--accent-alpha-70);
   transform: translateY(-2px);
 }
+
+/* ===================================================================
+   SCANLINE EFFECT - Pure CSS Randomized Scan Line Animation
+   =================================================================== */
+
+/* Create scanning line elements using pseudo-elements */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--accent), transparent);
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  animation: scan-initial 2s ease-in-out 0.5s forwards;
+}
+
+/* Secondary scan line for "random" intervals */
+.scan-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.scan-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--accent), transparent);
+  opacity: 0;
+  animation: scan-random 2s ease-in-out 60s forwards;
+}
+
+.scan-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--accent), transparent);
+  opacity: 0;
+  animation: scan-random 2s ease-in-out 127s forwards;
+}
+
+/* Keyframes for initial scan on page load */
+@keyframes scan-initial {
+  0% { 
+    transform: translateX(-100%); 
+    opacity: 0.6; 
+  }
+  10% { 
+    opacity: 0.3; 
+  }
+  90% { 
+    opacity: 0.3; 
+  }
+  100% { 
+    transform: translateX(100vw); 
+    opacity: 0; 
+  }
+}
+
+/* Keyframes for random interval scans */
+@keyframes scan-random {
+  0% { 
+    transform: translateX(-100%); 
+    opacity: 0; 
+  }
+  5% {
+    opacity: 0.4;
+  }
+  95% { 
+    opacity: 0.4; 
+  }
+  100% { 
+    transform: translateX(100vw); 
+    opacity: 0; 
+  }
+}
+
+/* Responsive scan line adjustments */
+@media (max-width: 768px) {
+  body::after,
+  .scan-container::after,
+  .scan-container::before {
+    width: 1px;
+  }
+}
+
+/* High contrast mode adjustments for scanline */
+@media (prefers-contrast: high) {
+  body::after,
+  .scan-container::after,
+  .scan-container::before {
+    background: linear-gradient(to bottom, transparent, white, transparent);
+  }
+}
+
+/* Reduced motion preferences for scanline */
+@media (prefers-reduced-motion: reduce) {
+  body::after,
+  .scan-container::after,
+  .scan-container::before {
+    animation: none;
+  }
+}
+
+/* ===================================================================
+   END SCANLINE EFFECT
+   =================================================================== */

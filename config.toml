@@ -1,6 +1,6 @@
 baseURL = 'https://terminaldawn.dev/'
-languageCode = 'en-us'
-theme = 'terminal'
+languageCode = "en-us"
+theme = "terminal"
 pagination.pagerSize = 5
 
 [markup.goldmark.renderer]
@@ -9,9 +9,16 @@ pagination.pagerSize = 5
 [params]
   contentTypeName = "posts"
   showMenuItems = 4
-  fullWidthTheme = false
-  centerTheme = false
-  customCSS = ["css/custom.css"]
+  fullWidthTheme = true
+  centerTheme = true
+  author = "Dan Babb"
+  customCSS = ["css/unified_terminal_theme.css"]
+
+[params.bluesky]
+  handle = "@oldsilverback.bsky.social"
+
+[params.mastodon]
+  url = "https://mastodon.social/@klevermonicker"
 
 [languages]
   [languages.en]

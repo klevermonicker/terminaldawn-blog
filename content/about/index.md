@@ -19,4 +19,6 @@ Built with [Hugo](https://gohugo.io/) using the excellent [Terminal theme](https
 
 ## Contact
 
-email: dan.babb@protonmail.com
+ - **Bluesky**: [@old_silverback.bsky.social](https://bsky.app/profile/old_silverback.bsky.social)
+ - **Mastodon**: [@klevermonicker@mastodon.social](https://mastodon.social/@klevermonicker)
+ - **GitHub**: [klevermonicker](https://github.com/klevermonicker)

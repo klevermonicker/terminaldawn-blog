@@ -45,14 +45,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.5rem;
 }
 
-/* Terminal-style headers */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--accent);
-  text-shadow: 0 0 10px var(--accent-alpha-70);
-  border-bottom: 1px solid var(--accent-alpha-20);
-  padding-bottom: 0.5rem;
-}
-
 /* Links with neon glow */
 a {
   color: var(--text);
@@ -111,21 +103,6 @@ pre::before {
   background: var(--accent-alpha-20);
   color: var(--accent);
   box-shadow: 0 0 15px var(--accent-alpha-70);
-}
-
-/* Hide menu markers/bullets */
-.menu li::marker,
-.menu--mobile li::marker,
-ul.menu li::marker {
-  content: none !important;
-  display: none !important;
-}
-
-.menu li,
-.menu--mobile li,
-ul.menu li {
-  list-style: none !important;
-  list-style-type: none !important;
 }
 
 /* Post metadata */
@@ -195,7 +172,7 @@ p code, li code {
   box-shadow: 0 8px 32px rgba(255, 0, 255, 0.1);
 }
 
-/* Cyberpunk-style lists */
+/* Cyberpunk-style lists 
 ul li::marker {
   content: "▶ ";
   color: var(--accent);
@@ -204,21 +181,11 @@ ul li::marker {
 ol li::marker {
   color: var(--text-secondary);
 }
-
-/* Add scanning line animation - subtle and sporadic */
+*/
+/* Add scanning line animation */
 @keyframes scan {
-  0% { transform: translateX(-100%); opacity: 0; }
-  5% { opacity: 0.2; }
-  10% { opacity: 0.4; }
-  15% { opacity: 0.2; }
-  20% { opacity: 0; transform: translateX(100vw); }
-  100% { transform: translateX(100vw); opacity: 0; }
-}
-
-@keyframes scanSequence {
-  0% { animation-play-state: running; }
-  12% { animation-play-state: paused; }
-  100% { animation-play-state: paused; }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100vw); }
 }
 
 body::after {
@@ -226,15 +193,13 @@ body::after {
   position: fixed;
   top: 0;
   left: 0;
-  width: 1px;
+  width: 2px;
   height: 100%;
   background: linear-gradient(to bottom, transparent, var(--accent), transparent);
-  animation: 
-    scan 5s linear infinite,
-    scanSequence 25s ease-in-out infinite;
+  animation: scan 3s linear infinite;
   pointer-events: none;
   z-index: 1000;
-  opacity: 0;
+  opacity: 0.3;
 }
 
 /* Terminal cursor blink */
