@@ -32,12 +32,14 @@ pagination.pagerSize = 5
 [languages]
   [languages.en]
     title = 'TerminalDawn'
-    subtitle = "Building resilient off-grid compute"
-    keywords = "off-grid, computing, raspberry pi, solar power, self-hosted"
-    copyright = "TerminalDawn"
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
+    
+    [languages.en.params]
+      subtitle = "Building resilient off-grid compute"
+      keywords = "off-grid, computing, raspberry pi, solar power, self-hosted"
+      copyright = "TerminalDawn"
+      menuMore = "Show more"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
       logoText = "TerminalDawn"
