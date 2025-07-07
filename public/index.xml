@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TerminalDawn</title>
+    <link>https://terminaldawn.dev/</link>
+    <description>Recent content on TerminalDawn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Dan Babb</copyright>
+    <lastBuildDate>Thu, 03 Jul 2025 01:46:51 -0700</lastBuildDate><atom:link href="https://terminaldawn.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://terminaldawn.dev/posts/hello-world/</link>
+      <pubDate>Thu, 03 Jul 2025 01:46:51 -0700</pubDate>
+      
+      <guid>https://terminaldawn.dev/posts/hello-world/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About TerminalDawn</title>
+      <link>https://terminaldawn.dev/about/</link>
+      <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://terminaldawn.dev/about/</guid>
+      <description>About the Project TerminalDawn is my ongoing project build and document truly resilient self-relient off-grid compute.
+The Mission A fully contained renewable energy powered computing system.
+About This Site This blog documents the engineering process, power consumption testing, and lessons learned while building TerminalDawn hardware.
+Built with Hugo using the excellent Terminal theme by panr, customized with a synthwave aesthetic that matches the cyberpunk nature of off-grid computing&amp;hellip;or just my own irrational love of all things cyberpunk.</description>
+    </item>
+    
+  </channel>
+</rss>

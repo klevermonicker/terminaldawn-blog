@@ -1,0 +1,326 @@
+/* TerminalDawn Synthwave/Cyberpunk Theme */
+
+:root {
+  --background: #0a0a0f;
+  --background-secondary: #1a0d2e;
+  --accent: #ff00ff;
+  --accent-alpha-70: rgba(255, 0, 255, 0.7);
+  --accent-alpha-20: rgba(255, 0, 255, 0.2);
+  --text: #00ffff;
+  --text-secondary: #ff6b9d;
+  --text-muted: #8892b0;
+  --border: #16213e;
+  --warning: #ffff00;
+  --success: #00ff41;
+}
+
+/* Background and main containers */
+body {
+  background: linear-gradient(135deg, var(--background) 0%, var(--background-secondary) 100%);
+  color: var(--text);
+  font-family: 'Courier New', 'Fira Code', monospace;
+}
+
+/* Add subtle grid pattern */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(rgba(255, 0, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 0, 255, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Terminal-style headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--accent-alpha-70);
+  border-bottom: 1px solid var(--accent-alpha-20);
+  padding-bottom: 0.5rem;
+}
+
+/* Links with neon glow */
+a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--text);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  text-shadow: 0 0 8px var(--accent-alpha-70);
+  box-shadow: 0 2px 0 0 var(--accent-alpha-20);
+}
+
+/* Code blocks with cyberpunk styling */
+code, pre {
+  background: rgba(255, 0, 255, 0.1);
+  border: 1px solid var(--accent-alpha-20);
+  border-radius: 4px;
+  box-shadow: inset 0 0 10px rgba(255, 0, 255, 0.1);
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  position: relative;
+}
+
+/* Terminal prompt styling */
+pre::before {
+  content: "terminaldawn@off-grid:~$ ";
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Navigation with neon effects */
+.menu {
+  background: rgba(26, 13, 46, 0.8);
+  border: 1px solid var(--accent-alpha-20);
+  backdrop-filter: blur(10px);
+}
+
+.menu a {
+  color: var(--text);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background: var(--accent-alpha-20);
+  color: var(--accent);
+  box-shadow: 0 0 15px var(--accent-alpha-70);
+}
+
+/* Post metadata */
+.post-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.post-meta time {
+  color: var(--text-secondary);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--accent);
+  background: rgba(255, 0, 255, 0.05);
+  padding: 1rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+blockquote::before {
+  content: ">";
+  color: var(--accent);
+  font-weight: bold;
+  position: absolute;
+  left: -2px;
+  top: 1rem;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+th, td {
+  border: 1px solid var(--accent-alpha-20);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: var(--accent-alpha-20);
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Special styling for inline code */
+p code, li code {
+  color: var(--warning);
+  background: rgba(255, 255, 0, 0.1);
+  border: 1px solid rgba(255, 255, 0, 0.2);
+  padding: 0.2rem 0.4rem;
+  font-size: 0.9em;
+}
+
+/* Hover effects for the main content area */
+.container {
+  background: rgba(26, 13, 46, 0.3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 8px 32px rgba(255, 0, 255, 0.1);
+}
+
+/* Terminal cursor blink */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor::after {
+  content: "█";
+  color: var(--accent);
+  animation: blink 1s infinite;
+}
+
+/* Power button styling for any buttons */
+button, .button {
+  background: linear-gradient(45deg, var(--accent-alpha-20), var(--accent-alpha-70));
+  border: 1px solid var(--accent);
+  color: var(--text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: inherit;
+}
+
+button:hover, .button:hover {
+  background: var(--accent);
+  color: var(--background);
+  box-shadow: 0 0 20px var(--accent-alpha-70);
+  transform: translateY(-2px);
+}
+
+/* ===================================================================
+   SCANLINE EFFECT - Pure CSS Randomized Scan Line Animation
+   =================================================================== */
+
+/* Create scanning line elements using pseudo-elements */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--accent), transparent);
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  animation: scan-initial 2s ease-in-out 0.5s forwards;
+}
+
+/* Secondary scan line for "random" intervals */
+.scan-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.scan-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--accent), transparent);
+  opacity: 0;
+  animation: scan-random 2s ease-in-out 60s forwards;
+}
+
+.scan-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--accent), transparent);
+  opacity: 0;
+  animation: scan-random 2s ease-in-out 127s forwards;
+}
+
+/* Keyframes for initial scan on page load */
+@keyframes scan-initial {
+  0% { 
+    transform: translateX(-100%); 
+    opacity: 0.6; 
+  }
+  10% { 
+    opacity: 0.3; 
+  }
+  90% { 
+    opacity: 0.3; 
+  }
+  100% { 
+    transform: translateX(100vw); 
+    opacity: 0; 
+  }
+}
+
+/* Keyframes for random interval scans */
+@keyframes scan-random {
+  0% { 
+    transform: translateX(-100%); 
+    opacity: 0; 
+  }
+  5% {
+    opacity: 0.4;
+  }
+  95% { 
+    opacity: 0.4; 
+  }
+  100% { 
+    transform: translateX(100vw); 
+    opacity: 0; 
+  }
+}
+
+/* Responsive scan line adjustments */
+@media (max-width: 768px) {
+  body::after,
+  .scan-container::after,
+  .scan-container::before {
+    width: 1px;
+  }
+}
+
+/* High contrast mode adjustments for scanline */
+@media (prefers-contrast: high) {
+  body::after,
+  .scan-container::after,
+  .scan-container::before {
+    background: linear-gradient(to bottom, transparent, white, transparent);
+  }
+}
+
+/* Reduced motion preferences for scanline */
+@media (prefers-reduced-motion: reduce) {
+  body::after,
+  .scan-container::after,
+  .scan-container::before {
+    animation: none;
+  }
+}
+
+/* ===================================================================
+   END SCANLINE EFFECT
+   =================================================================== */
