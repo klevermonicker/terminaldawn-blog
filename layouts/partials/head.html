@@ -1,0 +1,100 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="{{ if .Params.Author }}{{ .Params.Author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.subtitle }}{{ else }}{{ .Summary }}{{ end }}" />
+<meta name="keywords" content="{{ if .Params.Tags }}{{ delimit .Params.Tags ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="{{ .Site.Params.themeColor | default "#252627" }}" />
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- Social Media Meta Tags (Bluesky/Mastodon friendly) -->
+<meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+<meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.subtitle }}{{ else }}{{ .Summary | truncate 160 }}{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+
+{{ if .Params.image }}
+<meta property="og:image" content="{{ .Params.image | absURL }}" />
+{{ else if .Site.Params.logo }}
+<meta property="og:image" content="{{ .Site.Params.logo | absURL }}" />
+{{ end }}
+
+{{ if .IsPage }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
+{{ if .Params.Tags }}
+{{ range .Params.Tags }}
+<meta property="article:tag" content="{{ . }}" />
+{{ end }}
+{{ end }}
+{{ end }}
+
+<!-- Twitter Card fallback (still used by many platforms) -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+<meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.subtitle }}{{ else }}{{ .Summary | truncate 160 }}{{ end }}" />
+
+<!-- Bluesky specific meta (if configured) -->
+{{ if (isset $.Site.Params "bluesky") }}
+<meta name="bluesky:site" content="{{ $.Site.Params.Bluesky.handle }}" />
+<meta name="bluesky:creator" content="{{ if .IsHome }}{{ $.Site.Params.Bluesky.handle }}{{ else if isset .Params "authorbluesky" }}{{ .Params.authorBluesky }}{{ else }}{{ $.Site.Params.Bluesky.handle }}{{ end }}" />
+{{ end }}
+
+<!-- Mastodon verification (if configured) -->
+{{ if (isset $.Site.Params "mastodon") }}
+<link rel="me" href="{{ $.Site.Params.Mastodon.url }}" />
+{{ end }}
+
+<!-- Feeds -->
+{{ with .OutputFormats.Get "rss" -}}
+{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}" />
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}" />
+
+<!-- Theme CSS -->
+{{ $css := resources.Get "css/main.css" }}
+{{ $css = $css | resources.ExecuteAsTemplate "css/main.css" . }}
+{{ $css = $css | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
+
+<!-- Custom CSS -->
+{{ if .Site.Params.customCSS }}
+{{ range .Site.Params.customCSS }}
+{{ $customCSS := resources.Get . }}
+{{ if $customCSS }}
+{{ $customCSS = $customCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $customCSS.RelPermalink }}" integrity="{{ $customCSS.Data.Integrity }}" />
+{{ end }}
+{{ end }}
+{{ end }}
+
+<!-- JSON-LD structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ if .IsHome }}WebSite{{ else }}BlogPosting{{ end }}",
+  "name": "{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}",
+  "headline": "{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}",
+  "description": "{{ if .IsHome }}{{ .Site.Params.subtitle }}{{ else }}{{ .Summary | truncate 160 }}{{ end }}",
+  "url": "{{ .Permalink }}",
+  {{ if .IsPage }}
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ if .Params.Author }}{{ .Params.Author }}{{ else }}{{ .Site.Params.author }}{{ end }}"
+  },
+  {{ end }}
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}"
+  }
+}
+</script>
