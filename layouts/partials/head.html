@@ -18,8 +18,8 @@
 
 {{ if .Params.image }}
 <meta property="og:image" content="{{ .Params.image | absURL }}" />
-{{ else if .Site.Params.logo }}
-<meta property="og:image" content="{{ .Site.Params.logo | absURL }}" />
+{{ else if .Site.Params.logoImage }}
+<meta property="og:image" content="{{ .Site.Params.logoImage | absURL }}" />
 {{ end }}
 
 {{ if .IsPage }}
