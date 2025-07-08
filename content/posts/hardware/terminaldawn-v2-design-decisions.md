@@ -62,4 +62,4 @@ A rework of the entire setup. I'm going to be teaching myself *FreeCAD* and rebu
 
 Still figuring out FreeCAD and why my circuits work better in theory than practice. 
 
-Follow the chaos: (@klevermonicker@mastodon.social) | [@old_silverback.bsky.social]
+Follow the chaos: (@klevermonicker@mastodon.social) | [@oldsilverback.bsky.social]
