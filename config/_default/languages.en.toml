@@ -17,7 +17,7 @@ title = "TerminalDawn"
  [params.author]
    name = "TerminalDawn"
 #   email = "youremail@example.com"
-  image = "public/images/terminaldawnbloglogo.gif"
+  image = "static/images/terminaldawnbloglogo.gif"
 #   imageQuality = 96
    headline = "Building resilient off-grid computing systems"
    bio = "Links to Socials for the project!"
