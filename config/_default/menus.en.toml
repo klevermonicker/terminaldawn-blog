@@ -12,7 +12,7 @@
 
 [[main]]
   name = "About"
-  pageRef = "posts"
+  pageRef = "about"
   weight = 10
 
 [[main]]
@@ -23,13 +23,13 @@
 [[main]]
   name = "Software"
   parent = "Posts"
-  pageRef = "posts"
+  pageRef = "tags/software"
   weight = 20
 
 [[main]]
   name = "Hardware"
   parent = "Posts"
-  pageRef = "posts"
+  pageRef = "tags/hardware"
   weight = 20
 
 #[[subnavigation]]

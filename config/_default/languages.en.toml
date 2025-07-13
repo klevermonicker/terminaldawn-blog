@@ -2,23 +2,23 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "TerminalDawn"
+title = "Terminal Dawn"
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "terminaldawnbloglogo.gif"
+  logo = "img/menu_logo.svg"
   # secondaryLogo = "img/secondary-logo.png"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
  [params.author]
-   name = "TerminalDawn"
+   name = "klevermonicker"
 #   email = "youremail@example.com"
-  image = "static/images/terminaldawnbloglogo.gif"
-#   imageQuality = 96
+   image = "img/profile.jpg"
+   imageQuality = 96
    headline = "Building resilient off-grid computing systems"
    bio = "Links to Socials for the project!"
    links = [

@@ -1,13 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on TerminalDawn</title>
+    <title>Tags on Terminal Dawn</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on TerminalDawn</description>
+    <description>Recent content in Tags on Terminal Dawn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 TerminalDawn</copyright>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2025 klevermonicker</copyright>
+    <lastBuildDate>Sat, 05 Jul 2025 13:40:43 -0700</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Design</title>
+      <link>http://localhost:1313/tags/design/</link>
+      <pubDate>Sat, 05 Jul 2025 13:40:43 -0700</pubDate>
+      
+      <guid>http://localhost:1313/tags/design/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Freecad</title>
+      <link>http://localhost:1313/tags/freecad/</link>
+      <pubDate>Sat, 05 Jul 2025 13:40:43 -0700</pubDate>
+      
+      <guid>http://localhost:1313/tags/freecad/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>http://localhost:1313/tags/hardware/</link>
+      <pubDate>Sat, 05 Jul 2025 13:40:43 -0700</pubDate>
+      
+      <guid>http://localhost:1313/tags/hardware/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Raspberry-Pi</title>
+      <link>http://localhost:1313/tags/raspberry-pi/</link>
+      <pubDate>Sat, 05 Jul 2025 13:40:43 -0700</pubDate>
+      
+      <guid>http://localhost:1313/tags/raspberry-pi/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Solar</title>
+      <link>http://localhost:1313/tags/solar/</link>
+      <pubDate>Sat, 05 Jul 2025 13:40:43 -0700</pubDate>
+      
+      <guid>http://localhost:1313/tags/solar/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>

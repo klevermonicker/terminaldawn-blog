@@ -14,8 +14,8 @@
   <meta name="theme-color">
 
   
-  <title>Categories &middot; TerminalDawn</title>
-    <meta name="title" content="Categories &middot; TerminalDawn">
+  <title>Categories &middot; Terminal Dawn</title>
+    <meta name="title" content="Categories &middot; Terminal Dawn">
 
   
   
@@ -24,7 +24,7 @@
   
   <link rel="canonical" href="http://localhost:1313/categories/">
   
-      <link rel="alternate" type="application/rss+xml" href="/categories/index.xml" title="TerminalDawn" />
+      <link rel="alternate" type="application/rss+xml" href="/categories/index.xml" title="Terminal Dawn" />
   
   
   
@@ -97,7 +97,7 @@
 
   
   <meta property="og:url" content="http://localhost:1313/categories/">
-  <meta property="og:site_name" content="TerminalDawn">
+  <meta property="og:site_name" content="Terminal Dawn">
   <meta property="og:title" content="Categories">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
@@ -111,7 +111,7 @@
 
   
   
-    <meta name="author" content="TerminalDawn">
+    <meta name="author" content="klevermonicker">
   
   
     
@@ -216,12 +216,94 @@
   
     
     
+      <div>
+        <a href="/" class="flex">
+          <span class="sr-only">Terminal Dawn</span>
+          
+            <span class="logo object-scale-down object-left nozoom">
+              <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sunGlow" cx="50%" cy="100%">
+      <stop offset="0%" style="stop-color:#FFA500;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:0" />
+    </radialGradient>
+    <style>
+      .cursor {
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+  
+  <!-- Terminal Monitor -->
+  <g transform="translate(150,100)">
+    <!-- Monitor bezel -->
+    <rect x="-120" y="-60" width="240" height="100" rx="8" fill="#2a2a2a" stroke="#555" stroke-width="2"/>
+    
+    <!-- Screen -->
+    <rect x="-110" y="-50" width="220" height="70" rx="4" fill="#000"/>
+    
+    <!-- Sun emerging from top of screen -->
+    <g transform="translate(0,-50)">
+      <!-- Sun rays -->
+      <g fill="#FFA500">
+        <rect x="-2" y="-25" width="4" height="12" rx="2" transform="rotate(-90)"/>
+        <rect x="-2" y="-25" width="4" height="12" rx="2" transform="rotate(-70)"/>
+        <rect x="-2" y="-25" width="4" height="12" rx="2" transform="rotate(-50)"/>
+        <rect x="-2" y="-25" width="4" height="12" rx="2" transform="rotate(-30)"/>
+        <rect x="-2" y="-25" width="4" height="12" rx="2" transform="rotate(-10)"/>
+        <rect x="-2" y="-25" width="4" height="12" rx="2" transform="rotate(10)"/>
+        <rect x="-2" y="-25" width="4" height="12" rx="2" transform="rotate(30)"/>
+        <rect x="-2" y="-25" width="4" height="12" rx="2" transform="rotate(50)"/>
+        <rect x="-2" y="-25" width="4" height="12" rx="2" transform="rotate(70)"/>
+        <rect x="-2" y="-25" width="4" height="12" rx="2" transform="rotate(90)"/>
+      </g>
+      
+      <!-- Sun semicircle -->
+      <path d="M -18 0 A 18 18 0 0 1 18 0 Z" fill="#FFA500"/>
+      
+      <!-- Sun glow effect -->
+      <ellipse cx="0" cy="0" rx="25" ry="15" fill="url(#sunGlow)"/>
+    </g>
+    
+    <!-- Terminal content on screen -->
+    <g>
+      <!-- Terminal lines -->
+      <rect x="-100" y="-30" width="60" height="2" fill="#00FF00" opacity="0.8"/>
+      <rect x="-100" y="-25" width="80" height="2" fill="#00FF00" opacity="0.8"/>
+      <rect x="-100" y="-20" width="45" height="2" fill="#00FF00" opacity="0.8"/>
+      <rect x="-100" y="-15" width="70" height="2" fill="#00FF00" opacity="0.8"/>
+      <rect x="-100" y="-10" width="35" height="2" fill="#00FF00" opacity="0.8"/>
+      <rect x="-100" y="-5" width="55" height="2" fill="#00FF00" opacity="0.8"/>
+      <rect x="-100" y="0" width="25" height="2" fill="#00FF00" opacity="0.8"/>
+      
+      <!-- Current line with prompt -->
+      <rect x="-100" y="10" width="20" height="2" fill="#00FF00"/>
+      <text x="-78" y="13" fill="#00FF00" font-size="8" font-family="monospace">~$</text>
+      
+      <!-- Blinking cursor -->
+      <rect x="-65" y="8" width="3" height="8" fill="#00FF00" class="cursor"/>
+    </g>
+    
+    <!-- Monitor stand -->
+    <rect x="-15" y="40" width="30" height="20" rx="4" fill="#444"/>
+    <ellipse cx="0" cy="60" rx="50" ry="8" fill="#333"/>
+  </g>
+</svg>
+            </span>
+          
+        </a>
+      </div>
+    
 
   <div class="flex flex-1 items-center justify-between">
     <nav class="flex space-x-3">
       
         <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
-          TerminalDawn
+          Terminal Dawn
         </a>
       
     </nav>
@@ -231,11 +313,11 @@
       
         
   <a
-  href=""
+  href="/about/"
   
   class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
   
-  <p class="text-base font-medium" title="">
+  <p class="text-base font-medium" title="About">
     About
   </p>
 </a>
@@ -249,8 +331,11 @@
     
     <a
       
+        href="/posts/"
+        
+      
       class="text-base font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
-      title="">
+      title="Posts">
       Posts
     </a>
     <span>
@@ -280,11 +365,11 @@
       <div class="flex flex-col space-y-3">
         
           <a
-            href=""
+            href="/tags/hardware/"
             
             class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
             
-            <p class="text-sm font-sm" title="">
+            <p class="text-sm font-sm" title="Hardware">
               Hardware
             </p>
           </a>
@@ -452,11 +537,11 @@
               
   <li class="mt-1">
   <a
-    href=""
+    href="/about/"
     
     class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-bg font-bg" title="">
+    <p class="text-bg font-bg" title="About">
       About
     </p>
   </a>
@@ -468,10 +553,10 @@
               
   <li class="mt-1">
   <a
-    href=""
+    href="/posts/"
     class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-bg font-bg" title="">
+    <p class="text-bg font-bg" title="Posts">
       Posts
     </p>
     <span>
@@ -500,11 +585,11 @@
 
   <li class="mt-1">
     <a
-      href=""
+      href="/tags/hardware/"
       
       class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
       
-      <p class="text-sm font-small" title="">
+      <p class="text-sm font-small" title="Hardware">
         Hardware
       </p>
     </a>
@@ -605,7 +690,7 @@
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
           2025
-          TerminalDawn
+          klevermonicker
       </p>
     
 
