@@ -59,4 +59,4 @@ If you're here, you probably went to page 4 of Google or you make things too. We
 
 ---
 
-*"Knowledge belongs to humans, not a single point of failure."*
+*"Knowledge belongs to humans, not to a single point of failure."*
