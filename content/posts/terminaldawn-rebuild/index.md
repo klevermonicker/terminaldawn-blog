@@ -7,6 +7,7 @@ summary = "So, I built TerminalDawn v1 - my off-grid Raspberry Pi computer. Here
 tags = ["hardware", "design", "raspberry-pi", "solar", "freecad"]
 keywords = ["off-grid computing", "raspberry-pi", "solar", "freecad", "hardware design"]
 series = ["TerminalDawn"]
+series_order = 1
 showDate = true
 showAuthor = true
 showReadingTime = true
