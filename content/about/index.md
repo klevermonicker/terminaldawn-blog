@@ -11,7 +11,7 @@ showEdit = false
 
 ## The Brief
 
-So yea, I'm building a permanent home for the ephemeral contents of the web. A knowledge vault. It's seeds like that place in Norway, but it's seeds of a different kind, it's brain seeds...or droppingis time will tell. It's a copy of Wikipedia, tutorials, howto's, what to eat and not you die in the wilderness. Instead of inside of the guts of a mountain it's inside of...whatever I end up designing.
+So yea, I'm building a permanent home for the ephemeral contents of the web. A knowledge vault. It's seeds the vault in Norway, but it's seeds of a different kind, it's knowledge seeds. It's a copy of Wikipedia, tutorials, howto's, what to eat and not die in the wilderness. Instead of inside of the guts of a mountain it's inside of..a case I designed.
 
 This whole thing runs on solar power because hey, planets on fire anyway might as well try to help a little. That and you know the sun will always be available as an energy source for free...until we figure out how to bill for sunlight (don't worry I'm sure Nestle is working on this right now). Technically I could say I built a nuclear powered computer...and that's metal as hell.
 
@@ -49,7 +49,7 @@ This whole thing runs on solar power because hey, planets on fire anyway might a
 
 Look, we live in an age where all human knowledge is one search away, unless the WiFi's down (because WiFi is hard), or the server's down (you are aware that the internet runs on servers and not magic pixie dust running through a series of tubes?), or the company got bought by someone who thinks information should cost money, or... you get the idea.
 
-This project is my small, probably futile middle finger at keeping useful information available even when everything else goes completely sideways (or you know get's locked behind a paywall). Plus, and here's the real answer, it gives me an excuse to buy more electronics and call it "research"
+This project is my small, probably futile middle finger at keeping useful information available even when everything else goes completely sideways (or you know get's locked behind a paywall). Plus, and here's the real answer, it gives me an excuse to buy more electronics and call it "research".
 
 ## The Journey
 
