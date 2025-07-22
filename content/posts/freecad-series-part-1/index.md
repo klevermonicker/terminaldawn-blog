@@ -8,6 +8,7 @@ tags = ["software", "freecad", "cad", "terminal-dawn", "solar", "raspberry-pi", 
 keywords = ["off-grid computing", "raspberry-pi", "solar", "freecad", "software"]
 series = ["FreeCAD"]
 series_order = 1
+showComments = true
 showDate = true
 showAuthor = true
 showReadingTime = true
