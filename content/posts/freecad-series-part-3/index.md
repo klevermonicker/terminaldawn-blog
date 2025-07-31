@@ -1,5 +1,5 @@
 +++
-title = 'Terminaldawn Fasteners, The Grudge'
+title = 'FreeCAD Fasteners, The Grudge'
 date = '2025-07-30T22:42:57-07:00'
 draft = false
 description = "So working with fasteners in FreeCAD has led me to believe...I'm screwed."
@@ -83,7 +83,7 @@ Started with the intent of adding 4 fasteners, ended with adding 12 holes. It wo
 
 The design is boxy, but I want to have 3 solar panels on this thing. The solution I came up with that also solves some of my airflow/heat issues....side panels that open. Instead of the whole wall, I just want parts to move, and since it was boxy, I went non boxy. Like half trapezoidal...it's essentially a pentagon cause 5 sides, but not in the shape you just thought of. See pictures for reference.
 
-![Side Panel](terminaldawn_sidepanel.png)
+![Side Panel](terminaldawn-sidepanel.png)
 
 ## Alignment
 
