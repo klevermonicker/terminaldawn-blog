@@ -49,7 +49,7 @@ Me: *clicks surface*
 Fastener: *appears somewhere completely different*
 FreeCAD: "Here's the fastener exactly where you clicked"
 Me: "No...I cliked **THAT** surface"
-FreeCAD: "I placed it where you clicked. ¯\_(ツ)_/¯"
+FreeCAD: "I placed it where you clicked. ¯\\_(ツ)_/¯"
 Me: .....
 FreeCAD: "U mad bro?"
 
