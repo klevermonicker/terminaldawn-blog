@@ -21,16 +21,16 @@
   weight = 20
 
 [[main]]
-  name = "Software"
+  name = "Software Development"
   parent = "Posts"
-  pageRef = "tags/software"
+  pageRef = "categories/software-development"
   weight = 20
 
 [[main]]
   name = "Hardware"
   parent = "Posts"
-  pageRef = "tags/hardware"
-  weight = 20
+  pageRef = "categories/hardware"
+  weight = 21
 
 #[[subnavigation]]
 #  name = "An interesting topic"

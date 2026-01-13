@@ -1,8 +1,8 @@
 +++
-date = '2025-07-12T23:22:12-07:00'
+date = '2026-01-06T23:22:12-07:00'
 draft = false
 title = 'About'
-description = "Who is insane enough to build a solar-powered knowledge vault? Me..apparently I *AM* that guy"
+description = "SRE Manager by day, automation heretic by night. This is where I document everything I'm building, breaking, and learning."
 showDate = false
 showAuthor = false
 showReadingTime = false
@@ -11,52 +11,71 @@ showEdit = false
 
 ## The Brief
 
-So yea, I'm building a permanent home for the ephemeral contents of the web. A knowledge vault. It's seeds the vault in Norway, but it's seeds of a different kind, it's knowledge seeds. It's a copy of Wikipedia, tutorials, howto's, what to eat and not die in the wilderness. Instead of inside of the guts of a mountain it's inside of..a case I designed.
+So...I build things. Automation that exposes organizational dysfunction and gives it a viking funeral. Terminal configurations that make GUI-centric people question their life decisions. Systems that eat toil for breakfast and make everyone's lives better. Custom keyboards that shouldn't exist and whatever else catches my interest that week.
 
-This whole thing runs on solar power because hey, planets on fire anyway might as well try to help a little. That and you know the sun will always be available as an energy source for free...until we figure out how to bill for sunlight (don't worry I'm sure Nestle is working on this right now). Technically I could say I built a nuclear powered computer...and that's metal as hell.
+This all started with me building a solar-powered knowledge vault project. It has evolved into my tech playground - the place where I document everything I'm experimenting with, from nvim configs to AWS automation to vibe coding techniques that are unorthodox but get the work done.
+
+If it's not documented, it didn't happen. And if it happened, it belongs here - warts and all.
 
 ## The Setup
 
-**Hardware:**
- - Raspberry Pi 4
- - Solar panels
- - Enough batteries to make my neighbors suspicuous
- - 6-8 hours daily runtime (roughly as long as it took you to exit vim for the first time)
+**Day Job:**
+- SRE Manager
+- Building tools that make this work less painful
+- Making space to allow others to make cool stuff
+
+**Night Projects:**
+- Scrying: AI-powered documentation that generates diagrams and in-depth analysis of the code present and how data flows
+- Raptor: Full end-to-end TUI and CLI for tracking jobs and applications and customizing your resume
+- Random other stuff I want to dive into
 
 **Philosophy:**
- - If it's not documented, it didn't happen
- - If the internet goes down, we should still be able to figure out how things work
- - Everything should be repairable with stuff you can actually buy (or scavenge off a deserted hulk in the wasteland)
- - Failure is just content waiting to happen
+- If it can be automated, it should be...especially toil-rific processes
+- Failure is an option, it's how we learn, it's just content waiting to happen
+- Terminal is beautiful, live in it
+- Documentation isn't toil, it's how you prove it works
 
 ## What You'll Find Here
 
-**Experiments the worked:**
- - Solar charging optimization (or how I suck at math and why it matters)
- - Pi configurations that don't immediately drain the battery (or set the Pi on fire)
- - Power monitoring that borders on the obsessive
+**Automation & Tooling:**
+- Tools that find organizational gaps and fill them
+- Infrastructure as code that kind of sorta doesn't suck
+- Security tooling that actually helps people
 
-**Experiments that didn't:**
- - Also documented, meticulously. Watching me make them will be hilarious, and hey maybe you don't make the same ones
- - Spoiler Alert: there will be many
+**Terminal & Workflows:**
+- Nvim configurations and why they matter
+- Dotfile deep-dives
+- CLI-first development on my Mac, no Windows anything
+- Obsidian vault structures for knowledge management
 
-**Rabbit Holes:**
- - Why sustainable tech isn't just for hippies ...stuff offers a unique engineering challenge
- - The surprisingly difficult task of making things "simple"
- - Occasional rants about proprietary things, and I'll even beat a few dead horses!
+**Hardware & Making:**
+- Custom mechanical keyboard builds (ZMK firmware adventures)
+- Badge teardowns and repurposing
+- Electronics projects that 20% of the time work 100% of the time
+
+**Vibe Coding:**
+- How I scaffold systems with AI in just a few hours
+- Pair programming with Claude
+- When AI makes you better vs when it makes you lazy
+
+**Experiments That Didn't Work:**
+- This is the best ones to document, failure is where learning actually happens
+- Sneak Peek: There will be many...so so many
 
 ## The Why
 
-Look, we live in an age where all human knowledge is one search away, unless the WiFi's down (because WiFi is hard), or the server's down (you are aware that the internet runs on servers and not magic pixie dust running through a series of tubes?), or the company got bought by someone who thinks information should cost money, or... you get the idea.
+I'm tired of people locking knowledge behind paywalls, or proprietary systems or recipe blog like videos. I want things I mess up or figure out to be here. I want my optimizations that work and don't work - I want it here.
 
-This project is my small, probably futile middle finger at keeping useful information available even when everything else goes completely sideways (or you know get's locked behind a paywall). Plus, and here's the real answer, it gives me an excuse to buy more electronics and call it "research".
+This is not going to be a polished portfolio. This is going to be the actual ugly process of birthing something from my brain into whatever I think it needs to be, complete with dead ends, decisions that boil down to "why not", and the "uhhh it works..why does this work? It shouldn't work?"
+
+This gives me the excuse of buying more electronics and calling it "research."
 
 ## The Journey
 
-Every success, every spectacular failure, every "why did I think that would work" moment gets documented here. This isn't a polished showcase - it's the actual process of figuring things out, complete with dead ends and questionable decisions. I'm not genetically blessed enough to have an OnlyFans so this is my attempt to show you everything, warts and all.
+I started this as an off-grid computing project, which I will continue. It evolved into whatever this is now - a technical blog? A knowledge base? A way of putting my code where my mouth is? Proof that I can build shit like I claim to?
 
-If you're here, you probably went to page 4 of Google or you make things too. Welcome to my chaos!
+If you're here, you probably went to page 4 of Google, or you're the kind of person who opens config files and just goes "what's this do?". Welcome to my chaos!
 
 ---
 
-*"Knowledge belongs to humans, not to a single point of failure."*
+*"Build, Fail, Learn, Repeat"*

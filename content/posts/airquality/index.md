@@ -5,6 +5,7 @@ title = 'Airquality Sensors...a Terminal Dawn Side Quest'
 description = "Side Quest to work with a group of Air Quality Sensors."
 summary = "For this...the hard part was the wiring not the design! I did it all in FreeCAD"
 tags = ["software", "freecad", "cad", "terminal-dawn", "raspberry-pi", "3d-design", "air-quality", "sensors", "iot"]
+categories = ["Hardware"]
 keywords = ["raspberry-pi", "sensors", "freecad", "software", "air-quality", "co2", "sbs", "grafana", "influxdb", "environmental-monitoring"]
 series = ["TerminalDawn"]
 series_order = 3

@@ -5,6 +5,7 @@ draft = false
 description = "FreeCAD...it's CAD how hard could it be?"
 summary = "Really, how hard could FreeCAD be? I can do this, I've made a Donut in Blender, I used to use 3DS Max..."
 tags = ["software", "freecad", "cad", "terminal-dawn", "solar", "raspberry-pi", "3d-design"]
+categories = ["Hardware"]
 keywords = ["off-grid computing", "raspberry-pi", "solar", "freecad", "software"]
 series = ["FreeCAD"]
 series_order = 1

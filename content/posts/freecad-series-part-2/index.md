@@ -5,6 +5,7 @@ draft = false
 description = "FreeCAD and I are in a complicated situationship"
 summary = "It was harder than I thought but I feel like I've turned a corner, and every time I think that FreeCAD hits me with a twist..."
 tags = ["software", "freecad", "cad", "terminal-dawn", "solar", "raspberry-pi", "3d-design"]
+categories = ["Hardware"]
 keywords = ["off-grid computing", "raspberry-pi", "solar", "freecad", "software"]
 series = ["FreeCAD"]
 series_order = 2

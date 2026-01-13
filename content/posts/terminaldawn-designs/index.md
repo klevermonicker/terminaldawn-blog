@@ -5,6 +5,7 @@ draft = false
 description = "So now that the POC worked, I'm digging into the actual design and learning lessons."
 summary = "I built the whole thing just to see if I could. Harsh reality set in and I want to do more of this."
 tags = ["hardware", "design", "raspberry-pi", "solar", "freecad"]
+categories = ["Hardware"]
 keywords = ["off-grid computing", "raspberry-pi", "solar", "freecad", "hardware design"]
 series = ["TerminalDawn"]
 series_order = 2

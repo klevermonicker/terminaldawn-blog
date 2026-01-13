@@ -5,6 +5,7 @@ draft = false
 description = "So working with fasteners in FreeCAD has led me to believe...I'm screwed."
 summary = "For some reason I thought fasteners would be easy. Why did I think this?"
 tags = ["software", "design", "raspberry-pi", "solar", "freecad"]
+categories = ["Hardware"]
 keywords = ["off-grid computing", "raspberry-pi", "solar", "freecad", "hardware design"]
 series = ["FreeCAD"]
 series_order = 3
