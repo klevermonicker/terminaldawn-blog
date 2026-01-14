@@ -132,7 +132,7 @@ Fix the low hanging fruit. You know the obviously stupidly broken stuff.
 
 **Phase 3: Burn the debt**
 
-Remove nvim-ts-raindbow. Finally accept that JS is unfortunately for EVERYONE here to stay. Organize my keymaps for really reals.
+Remove nvim-ts-rainbow. Finally accept that JS is unfortunately for EVERYONE here to stay. Organize my keymaps for really reals.
 
 **Phase 4: Intention**
 
