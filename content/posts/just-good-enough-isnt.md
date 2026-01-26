@@ -150,7 +150,7 @@ Not just a "Here's my shiny config!" Rather a "here's why, here's what I tried, 
 
 By the end of this series, I want:
 
-1. **A config I understand** - Every reason has a line
+1. **A config I understand** - Every line has a reason
 2. **A config I use** - No orphaned features
 3. **A config that's mine** - Customized unapologetically for MY workflow, not generic best practices
 4. **A record for other** - So when you Google "Neovim config mistakes" You find honest answers.
