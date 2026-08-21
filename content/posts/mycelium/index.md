@@ -5,6 +5,7 @@ title = 'Mycelium'
 description = ""
 summary = ""
 tags = []
+categories = ["Software"]
 keywords = []
 series = ["Mycelium"]
 series_order = 1
