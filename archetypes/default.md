@@ -5,6 +5,7 @@ title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 description = ""
 summary = ""
 tags = []
+categories = []
 keywords = []
 series = []
 series_order = 1
